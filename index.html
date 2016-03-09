@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="ritasoares">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Rafael Mariano">
+
+  <title>Studio Rita Soares</title>
+  <link href="media/favicon.png" rel="icon" type="image/png">
+
+  <!-- Node Modules -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+  <!-- Application -->
+  <link rel="stylesheet" href="build/stylesheets/application.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#/">
+        	<img class="logo" src="/media/logo.png" alt="La" />
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/gallery">Galeria</a></li>
+          <li><a href="#/about">Sobre</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div ui-view></div>
+
+	<footer>
+  	<div class="container">
+      Studio Rita Soares &copy; {{ localTime | date:'yyyy' }} <br>
+    </div>
+  </footer>
+
+  <!-- Node Modules -->
+  <script src="node_modules/lodash/lodash.min.js"></script>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+  <script src="node_modules/angular-google-maps/dist/angular-google-maps.min.js"></script>
+  <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+  <!-- Application -->
+  <script src="build/javascripts/application.js"></script>
+  <script src="build/javascripts/routes.js"></script>
+  <script src="build/javascripts/controllers/modal-ctrl.js"></script>
+  <script src="build/javascripts/controllers/home-ctrl.js"></script>
+  <script src="build/javascripts/controllers/about-ctrl.js"></script>
+  <script src="build/javascripts/controllers/gallery-ctrl.js"></script>
+</body>
+</html>
