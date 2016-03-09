@@ -1,0 +1,49 @@
+<section>
+	<div class="row">
+  	<hr>
+		<h1 align="center"><span class="glyphicon glyphicon-picture"></span> Galeria de Imagens</h1>
+		<hr>
+
+		<div align="center" style="padding-top:40px;padding-bottom:40px;"
+			ng-if="!images.length">
+			<h1><i class="fa fa-spinner fa-pulse fa-5x"></i></h1>
+		</div>
+
+		<div id="links" align="center">
+    	<a ng-href="https://s3.amazonaws.com/www.ritasoares.com.br/media/gallery_original/{{image}}"
+        ng-repeat="image in images">
+        <img ng-src="https://s3.amazonaws.com/www.ritasoares.com.br/media/gallery_thumb/{{image}}"
+          class="img-circle" alt="" width="200" height="200"/>
+	    </a>
+		</div>
+	</div>
+	<hr>
+</section>
+
+<section class="black">
+	<div class="row">
+	    <div class="col-lg-6 col-sm-6 col-sm-12 col-xs-12">
+			<h1 align="center"><span class="glyphicon glyphicon-shopping-cart"></span> Produtos</h1>
+			<p>Trabalhamos com as melhores marcas profissionais para garantir a saúde e a estética do seu cabelo, proporcionando o seu bem estar com mais beleza e confiança para qualquer tipo de evento cotidiano ou atípicos, como festas de formaturas, casamentos, aniversários, debutantes.</p>
+			<ul>
+				<li>Annethune</li>
+				<li>Matrix</li>
+				<li>Coiffeur</li>
+			</ul>
+		</div>
+
+	    <div class="col-lg-6 col-sm-6 col-sm-12 col-xs-12">
+			<h1 align="center"><span class="glyphicon glyphicon-paperclip"></span> Serviços</h1>
+			<p>Confeccionamos unhas artísticas através de uma variadade nos modelos de esmaltes e desenhos. Além disso, trabalhamos com design de sobrancelhas e maquiagens profissionais para ocasiôes especiais.</p>
+			<ul class="cabelos">
+			    <li>Manicure</li>
+			    <li>Pedicure</li>
+			    <li>Penteados e Maquiagem</li>
+			    <li>Sobrancelha</li>
+			    <li>Depilação</li>
+			</ul>
+		</div>
+	</div>
+
+	<hr>
+</section>

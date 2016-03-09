@@ -1,0 +1,105 @@
+
+      <uib-carousel active="active" interval="5000" no-wrap="false">
+        <uib-slide ng-repeat="slide in slides track by $index" index="$index">
+          <img ng-src="{{slide}}">
+        </uib-slide>
+      </uib-carousel>
+
+<section>
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <h1 align="center"><strong>Rita Soares</strong> <small>(Studio Hair)</small></h1>
+       <p>A estética influência diretamente no bem-estar e na auto-estima das pessoas, onde todos procuram por serviços e produtos de qualidade que satisfaçam todas os seus desejos e vontades para todos os tipos de eventos que enfrentamos, seja eles atípicos ou cotidianos.<br><br>Com o intuito de centralizar todas as necessidades estéticas dos nossos clientes fundamos em 2008 nosso centro de beleza que conta com profissionalismo e excelência em produtos para garantir serviços incomparáveis à comunidade de Ribeirão Preto. Contando com uma variedade de serviços qualidade e de pontualidade garantimos total satisfação aos nossos clientes.<br><br> A nossa excelência é garantida através de contínuos cursos profissionalizantes e por uma incansável busca pelos produtos mais requisitados no mercado, como as marcas Annethune, Matrix, Coiffer entre outras, além de uma equipe competente e fiél aos nossos clientes.</p>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <h2>Fale Conosco</h2>
+      <address>
+        <strong>STUDIO RITA SOARES</strong><br><br>
+        Atendimento<br>
+        De terça à sexta das 8:00 às 18:00<br>
+        Aos Sábados das 8:00 às 18:00<br><br>
+        Rua Athaulfo Alves, 584, Parque Anhanguera<br>
+        Ribeirão Preto - São Paulo - CEP:14095-550<br>
+      </address>
+      <address>
+        <abbr title="Phone">Phone:</abbr> (16) 3617-8047<br><br>
+        <!-- <abbr title="Email">Email:&nbsp&nbsp</abbr> <a href="mailto:#">rita@ritasoares.com.br</a> -->
+      </address>
+      <a href="https://www.facebook.com/pages/Studio-Rita-Soares/428741520547544"
+        class="btn btn-primary btn-block">
+        <i class="fa fa-facebook"></i>
+        <span style="padding-left:7px;padding-right:7px;">|</span>
+        Visite a Nossa Página No Facebook!
+      </a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <img class="img-circle img-responsive text-center"src="media/marketing1.png" alt="" />
+      <h2>Cabelos & Penteados</h2>
+      <p>Trabalhamos com as melhores marcas profissionais para garantir a saúde e a estética do seu cabelo,
+      proporcionando o seu bem estar com mais beleza e confiança para qualquer tipo de evento cotidiano ou atípicos,
+      como festas de formaturas, casamentos, aniversários, debutantes.</p>
+      <ul>
+        <li>Corte e Coloração</li>
+        <li>Hidratação</li>
+        <li>Hidratação e Reconstrução</li>
+        <li>Escova Progressiva</li>
+        <li>Transformação Capilar</li>
+      </ul>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <img class="img-circle img-responsive text-center"src="media/marketing2.png" alt="" />
+      <h2>Saúde & Beleza</h2>
+      <p>Confeccionamos unhas artísticas através de uma variadade nos modelos de esmaltes e desenhos.
+      Além disso, trabalhamos com design de sobrancelhas e maquiagens profissionais para ocasiôes especiais.</p>
+      <ul class="cabelos">
+        <li>Manicure</li>
+        <li>Pedicure</li>
+        <li>Penteados e Maquiagem</li>
+        <li>Sobrancelha</li>
+        <li>Depilação</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+  <ui-gmap-google-map center="map.center" zoom="map.zoom">
+    <ui-gmap-marker coords="marker.coords" idkey="marker.id"></ui-gmap-marker>
+  </ui-gmap-google-map>
+  <hr>
+
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h2 class="modal-title" id="myModalLabel"> Promoções de Terça à Quinta</h2>
+      </div>
+      <div class="modal-body">
+          <div class="aux_left">Pé e mão - ganha uma francesinha</div><div class="aux_right">R$23,00</div>
+          <div class="aux_left">Corte e Hidratação</div><div class="aux_right">R$45,00</div>
+          <div class="aux_left">Escova e Hidratação</div><div class="aux_right">R$45,00</div>
+          <div class="aux_left">Corte, Escova e Hidratação</div><div class="aux_right">R$65,00</div>
+          <div class="aux_left">Cauterização Aneethun</div><div class="aux_right">R$70,00 (à partir)</div>
+          <div class="aux_left">Progressiva</div><div class="aux_right">R$120,00 (à partir)</div>
+          <div class="aux_left">Depilação por parte</div><div class="aux_right">R$12,00</div>
+          <div class="aux_left">Massagem relaxante com pedras quentes</div><div class="aux_right">R$30,00</div>
+          <br>
+          <h4> Liquidação </h4>
+          Todas as mercadorias da Loja com <label style="color:red;font-size:20px">50%</label> de desconto<br>
+          <i>Empório - República - Zamper - 767 - Revanche</i>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
